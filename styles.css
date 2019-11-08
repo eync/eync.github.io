@@ -1,0 +1,83 @@
+	@font-face {
+		font-family: 'Montserrat', sans-serif;
+		font-style:  normal;
+		src: url("https://fonts.googleapis.com/css?family=Montserrat&display=swap") format("Montserrat");
+	}
+
+	:root {
+		--bg-color: #FFF;
+		--text-color: #000;
+	}
+
+	html {
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		user-select: none;
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+	html, body {
+		height: 100%;
+	}
+
+	body {
+		font: normal 20px/1.4 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+		margin: 0 1em;
+		padding: 1em 0;
+		color: var(--text-color);
+        height:100%;
+		background: purple;
+		display: flex;
+	}
+
+	main {
+		margin: auto;
+		font-size: 6vh;
+		line-height: 8vh;
+		max-width: 120vh;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+		background: hsl(200, 100%, 80%);
+        padding:0 10px;
+	}
+
+	a:hover,
+	a:focus {
+		outline: none;
+		background: var(--text-color);
+		color: var(--bg-color);
+	}
+    .emoji {
+        font-weight: 400;
+        font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
+    }
+    .highlight {
+		color: inherit;
+		text-decoration: none;
+		background: var(--bg-color);
+		color: var(--text-color);
+        padding:0 10px;
+    }
+    .highlight:hover {
+        outline: none;
+		background: var(--text-color);
+		color: var(--bg-color);
+    }
+	@media screen and (prefers-color-scheme: dark) {
+		:root {
+			--bg-color: #000;
+			--text-color: #FFF;
+		}
+
+		a {
+			background: hsl(255555, 100%, 12%);
+		}
+	}
