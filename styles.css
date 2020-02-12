@@ -5,8 +5,8 @@
 	}
 
 	:root {
-		--bg-color: #FFF;
-		--text-color: #000;
+		--white: #FFF;
+		--black: #000;
 	}
 
 	html {
