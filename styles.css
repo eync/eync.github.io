@@ -55,6 +55,7 @@
 	.locbloc2{
 		grid-column: span 3;
 		display: grid;
+		text-transform: uppercase;
 		justify-items: center;
 		
 	}
