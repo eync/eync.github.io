@@ -55,6 +55,8 @@
 	.locbloc1{
 		grid-column: span 3;
 		display: grid;
+		justify-items: center;
+		align-items: center;
 		
 	}
 	.locbloc2{
