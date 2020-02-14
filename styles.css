@@ -5,11 +5,11 @@
 	}
 
 	:root {
-		--white: #FFF;
-		--black: #000;
+		--white: #e6e8e6;
+		--black: #03191E;
 		/* gotta change these later */
-		--purple: #fff; 
-		--yellow: #fff; 
+		--purple: #d149eb; 
+		--yellow: #fdca40; 
 	}
 
 	html {
@@ -32,9 +32,9 @@
 		font: normal 20px/1.4 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 		margin: 0 1em;
 		padding: 1em 0;
-		color: var(--text-color);
+		color: var(--white);
         height:100%;
-		background: purple;
+		background: var(--purple);
 		display: flex;
 	}
 
@@ -75,8 +75,8 @@
 	a:hover,
 	a:focus {
 		outline: none;
-		background: var(--text-color);
-		color: var(--bg-color);
+		background: var(--white);
+		color: var(--black);
 	}
     .emoji {
         font-weight: 400;
@@ -85,20 +85,17 @@
     .highlight {
 		color: inherit;
 		text-decoration: none;
-		background: var(--bg-color);
-		color: var(--text-color);
+		background: var(--black);
+		color: var(--white);
         padding:0 10px;
     }
     .highlight:hover {
         outline: none;
-		background: var(--text-color);
-		color: var(--bg-color);
+		background: var(--white);
+		color: var(--black);
     }
 	@media screen and (prefers-color-scheme: dark) {
-		:root {
-			--bg-color: #000;
-			--text-color: #FFF;
-		}
+
 
 		a {
 			background: hsl(255555, 100%, 12%);
