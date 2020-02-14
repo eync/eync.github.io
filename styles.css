@@ -43,6 +43,8 @@
 		font-size: 6vh;
 		line-height: 8vh;
 		max-width: 120vh;
+		display:grid;
+		grid-gap: 10px;
 	}
 
 	a {
