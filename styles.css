@@ -57,6 +57,12 @@
 		display: grid;
 		
 	}
+	.locbloc3{
+		justify-items: center;
+		align-items: center;
+		
+	}
+
 
 	a {
 		color: inherit;
