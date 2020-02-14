@@ -48,7 +48,12 @@
 		grid-template-columns: repeat(3, 1fr);
 	}
 	.locbloc1{
-		grid-column: span 2;
+		grid-column: span 3;
+		display: grid;
+		
+	}
+	.locbloc2{
+		grid-column: span 3;
 		display: grid;
 		
 	}
