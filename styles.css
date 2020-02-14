@@ -45,9 +45,10 @@
 		max-width: 120vh;
 		display:grid;
 		grid-gap: 10px;
-		grid-template: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 	}
-	.locbloc {
+	.locbloc1{
+		grid-column: span 2;
 		
 	}
 
