@@ -2,9 +2,9 @@
 	@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap");
 
 	:root {
+		/* some basic colors */
 		--white: #e6e8e6;
 		--black: #03191E;
-		/* gotta change these later */
 		--purple: #771a89; 
 		--yellow: #fdca40; 
 	}
@@ -43,6 +43,7 @@
 		display:grid;
 		grid-gap: 10px;
 		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto auto 1fr;
 	}
 	.locbloc1{
 		grid-column: span 3;
