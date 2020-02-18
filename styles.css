@@ -93,8 +93,8 @@
 		text-decoration: none;
 		background: var(--black);
 		color: var(--white);
-		padding: 15px;
-		margin: 15px;
+		padding: 10px;
+		margin: 10px;
 		font-size: 14px;
     }
     .highlight:hover {
