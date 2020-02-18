@@ -95,6 +95,7 @@
 		color: var(--white);
 		padding: 15px;
 		margin: 15px;
+		font-size: 14px;
     }
     .highlight:hover {
         outline: none;
