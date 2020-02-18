@@ -86,7 +86,7 @@
 	}
 	.highlightmenu {
 		list-style: none;
-		
+		padding:10px;
 	}
     .highlight {
 		color: inherit;
