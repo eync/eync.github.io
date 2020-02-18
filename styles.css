@@ -85,8 +85,10 @@
         font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
 	}
 	.highlightmenu {
-		list-style: none;
-		padding:10px;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
 	}
     .highlight {
 		color: inherit;
