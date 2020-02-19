@@ -35,6 +35,10 @@
 		display: flex;
 	}
 
+	h2 {
+		font-size:3vh;
+	}
+
 	main {
 		margin: auto;
 		font-size: 4vh;
