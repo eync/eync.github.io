@@ -7,6 +7,7 @@
 		--black: #03191E;
 		--purple: #771a89; 
 		--yellow: #fdca40; 
+		--abg: hsl(200, 98%, 18%);
 	}
 
 	html {
@@ -75,7 +76,7 @@
 	a {
 		color: inherit;
 		text-decoration: none;
-		background: hsl(200, 100%, 80%);
+		background: var(--abg);
         padding:0 10px;
 	}
 
@@ -109,7 +110,32 @@
         outline: none;
 		background: var(--white);
 		color: var(--black);
-    }
+	}
+	
+	.tabbytab {
+		list-style-type: none;
+		margin:0;
+		padding:0;
+		overflow: hidden;
+	}
+	.tabbytabs {
+		display:inline;
+		color: inherit;
+		text-decoration: none;
+		background: var(--black);
+		color: var(--white);
+		padding: 10px;
+		font-size: 14px;
+		line-height: 10px;
+	}
+	.tabbycontent {
+		padding:0 20px 0 20px;
+		line-height: 25px;
+		display:none;
+	}
+	.activated {
+		display:block;
+	}
 	@media screen and (prefers-color-scheme: dark) {
 
 

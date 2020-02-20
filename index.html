@@ -5,14 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanjiv.info - Web Developer </title>
     <meta name="description" content="Sanjiv is developer and blogger.">
-    <link media="all" rel="stylesheet" href="https://sanjiv.info/styles.css" />
+    <link media="all" rel="stylesheet" href="styles.css" />
   </head>
 
  <body>
   <main>
     <div class="locbloc1"><a href="https://sanjiv.info">Sanjiv</a></div>
     <div class="locbloc2">developer, blogger & wannabe astronaut 🚀</div>
-    <div class="locbloc3"><h2>Who's Sanjiv?</h2></div>
+    <div class="locbloc3">
+      <h2>Who's Sanjiv?</h2>
+      <div class="tabbytabby">
+      <ul class="tabbytab">
+        <li data-target="about" class="tabbytabs test">about</li>
+        <li data-target="projects" class="tabbytabs">projects</li>
+        <li data-taget="contact" class="tabbytabs">contact</li>
+      </ul>
+        <div class="tabbycontent activated" id="about" style="border:1px solid var(--black); background:var(--abg);">
+          <p style="font-size:14px;">Hey I am Sanjiv from helsinki</p>
+        </div>
+        <div class="tabbycontent" id="projects" style="border:1px solid var(--black); background:var(--abg);">
+          <p style="font-size:14px;">Hey I am Sanjiv from helsinki</p>
+        </div>
+        <div class="tabbycontent" id="contact" style="border:1px solid var(--black); background:var(--abg);">
+          <p style="font-size:14px;">Hey I am Sanjiv from helsinki</p>
+        </div>
+      </div>
+    </div>
     <div class="locbloc4">
       <h2>Experience</h2>
       <ul class="highlightmenu">
@@ -35,6 +53,37 @@
   </main>
  </body>
  <script>
+   let tabbytabby = document.querySelectorAll(".tabbytabs");
+   let tabbycontent = document.querySelector(".tabbycontent");
+  //  let helper2 = document.querySelector(".tabbytabs").classList.contains("test", true);
+//   So when your page loads, you should do
+// 1) Document query all links you want (link 1, link 2, link 3 etc.) and save this list of links in a global variable
+// 2) Add an event listener to all the links
+// 3) The event listener will add the "test" class to 
+// its event.target and iterate through all the links that are
+//  event.target !== link in the global variable to remove the "test" class
+    //otetaan käyttöön tabbytabby let ja sieltä
+    //lisätään itsellemme joka seuraa klikkiä
+    //ja jos totta niin tee X
+    // You should generally avoid queries like document.querySelectorAll("div:not(.this-not)");,
+    //  especially when you don't save the result and fire that query on every click :open_mouth:
+ //DOM queries are relatively expensive, especially when you scorch the entire DOM for an element
+ // that's used all over the place like div :stuck_out_tongue:    
+
+//  Yes :open_mouth: Do note that it's relative. It will take a significantly-sized HTML page with quite a few expensive DOM queries to be anything close to noticeable. However it's generally considered bad practice to treat DOM queries like they're free. You should try to minimize that by saving the results in variables to reuse them later (instead of firing the same DOM query again) :pray:
+
+    // Array.from(tabbytabby).forEach((tabbytabbytabb) => {
+    //   tabbytabbytabb.addEventListener('click', (e) => {
+    //     e.preventDefault();
+    //     if (tabbytabbytabb.classList.contains("test") == false) {
+    //     tabbytabbytabb.classList.toggle("test", true); 
+    //     console.log("thisworks")
+    //     } else if (tabbytabbytabb.classList.contains("test") == true) {
+    //     tabbytabbytabb.classList.toggle("test", false);
+    //     console.log("thisworkstoo")
+    //       } return ;
+    //     });
+    // });  
   /* let ppt = document.selectQuery("span .highlight");
 
     // Add selector + function that makes "bubble"
