@@ -5,9 +5,10 @@
 		/* some basic colors */
 		--white: #e6e8e6;
 		--black: #03191E;
-		--purple: #771a89; 
-		--yellow: #fdca40; 
-		--abg: hsl(200, 98%, 18%);
+		--purple: #055864; 
+		--yellow: #BFAB25; 
+		--abg: #026C7C;
+		--jacky: #026C7C;
 	}
 
 	html {
@@ -140,6 +141,6 @@
 
 
 		a {
-			background: hsl(255555, 100%, 12%);
+			background: var(--jacky);
 		}
 	}
