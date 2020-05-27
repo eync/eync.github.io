@@ -6,67 +6,115 @@
     <title>Sanjiv.info - Web Developer </title>
     <meta name="description" content="Sanjiv is developer and blogger 🚀">
     <link media="all" rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+// https://github.com/rafrex/spa-github-pages
+// Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+
+let redirect404 = () => {
+var segmentCount = 0;
+var location = window.location;
+location.replace(
+location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '') +
+location.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
+location.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+(location.search ? '&q=' + location.search.slice(1).replace(/&/g, '~and~') : '') +
+location.hash
+);
+}
+
+let recieveRedirect = () => {
+(function(location) {
+if (location.search) {
+  var q = {};
+  location.search.slice(1).split('&').forEach(function(v) {
+    var a = v.split('=');
+    q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+  });
+  if (q.p !== undefined) {
+    window.history.replaceState(null, null,
+      location.pathname.slice(0, -1) + (q.p || '') +
+      (q.q ? ('?' + q.q) : '') +
+      location.hash
+    );
+  }
+}
+}(window.location));
+}
+  recieveRedirect()
+  </script>
+    <script> 
+    let contactPage= "testing 1";
+
+
+
+  </script>
+  <script src="pages/index.js"></script>
+  <script src="pages/work.js"></script>
+  <script src="pages/about.js"></script>
+  <script src="pages/cv.js"></script>
   </head>
 
  <body>
   <main>
     <div class="fullgrid"></div>
-    <div class="locbloc1"><a  href="https://sanjiv.info">Sanjiv</a><p>developer, blogger & wannabe astronaut 🚀 </p></div>
+
+    <div class="locbloc1"><a onclick="onNavItemClick('/'); return false;">Sanjiv</a><p>developer, blogger & wannabe astronaut 🚀 </p></div>
     <div class="locbloc-menu">
       <ul>
-        <li><a href="#">work</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">instagram</a></li>
-        <li><a href="#">cv</a></li>
+        <li><a href="#" onclick="onNavItemClick('/work'); return false;">work</a></li>
+        <li><a href="#" onclick="onNavItemClick('/about'); return false;">about</a></li>
+        <li><a href="#" onclick="onNavItemClick('/contact'); return false;">contact</a></li>
+        <li><a href="#" onclick="onNavItemClick('/vitae'); return false;">cv</a></li>
       </ul>
     </div>
+
     <div class="fullgrid"></div>
-    <div class="fullgrid alterfull">
-      <blockquote>
-        <header>making difference</header>
-        <p>Empathy, visualization, anticipation of behavior and communication are Sanjiv's underlying strengths.</p>
-    </blockquote>
-    </div>
+
     <div class="fullgrid">
-      <div>
-        <div><div>
-            <img src="https://images.squarespace-cdn.com/content/v1/53c9cdf3e4b0669c8d19e691/1568069907418-600X29WQ8IDLJ4WEBILW/ke17ZwdGBToddI8pDm48kMr7cO87uK4i5FGmPfgnAmJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0tLQ7Yw5rvbjD09fusQ6zruw_237OMvrlo6Pc0CJdbfdeTHYj9jtBJKhNQnMMHkZZQ/Codefi-FieldFlow-17.png?format=750w">
-            <span>NewCo Helsinki</span>
-        </div></div>
-        <div><div>
-            <img src="https://images.squarespace-cdn.com/content/v1/53c9cdf3e4b0669c8d19e691/1568069907418-600X29WQ8IDLJ4WEBILW/ke17ZwdGBToddI8pDm48kMr7cO87uK4i5FGmPfgnAmJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0tLQ7Yw5rvbjD09fusQ6zruw_237OMvrlo6Pc0CJdbfdeTHYj9jtBJKhNQnMMHkZZQ/Codefi-FieldFlow-17.png?format=750w">
-            <span>MakeStyle</span>
-        </div></div>
-        <div><div>
-            <img src="https://images.squarespace-cdn.com/content/v1/53c9cdf3e4b0669c8d19e691/1568069907418-600X29WQ8IDLJ4WEBILW/ke17ZwdGBToddI8pDm48kMr7cO87uK4i5FGmPfgnAmJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0tLQ7Yw5rvbjD09fusQ6zruw_237OMvrlo6Pc0CJdbfdeTHYj9jtBJKhNQnMMHkZZQ/Codefi-FieldFlow-17.png?format=750w">
-            <span>Kallion Pesula</span>
-        </div></div>
-        <div><div>
-            <img src="https://images.squarespace-cdn.com/content/v1/53c9cdf3e4b0669c8d19e691/1568069907418-600X29WQ8IDLJ4WEBILW/ke17ZwdGBToddI8pDm48kMr7cO87uK4i5FGmPfgnAmJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0tLQ7Yw5rvbjD09fusQ6zruw_237OMvrlo6Pc0CJdbfdeTHYj9jtBJKhNQnMMHkZZQ/Codefi-FieldFlow-17.png?format=750w">
-            <span>Fysio Clinic</span>
-        </div></div>
-        <div><div>
-            <img src="https://images.squarespace-cdn.com/content/v1/53c9cdf3e4b0669c8d19e691/1568069907418-600X29WQ8IDLJ4WEBILW/ke17ZwdGBToddI8pDm48kMr7cO87uK4i5FGmPfgnAmJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0tLQ7Yw5rvbjD09fusQ6zruw_237OMvrlo6Pc0CJdbfdeTHYj9jtBJKhNQnMMHkZZQ/Codefi-FieldFlow-17.png?format=750w">
-            <span>Brio Team</span>
-        </div></div>
-        <div><div>
-            <img src="https://images.squarespace-cdn.com/content/v1/53c9cdf3e4b0669c8d19e691/1568069907418-600X29WQ8IDLJ4WEBILW/ke17ZwdGBToddI8pDm48kMr7cO87uK4i5FGmPfgnAmJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0tLQ7Yw5rvbjD09fusQ6zruw_237OMvrlo6Pc0CJdbfdeTHYj9jtBJKhNQnMMHkZZQ/Codefi-FieldFlow-17.png?format=750w">
-            <span>Warsow</span>
-        </div></div>
-        <div><div>
-            <img src="https://images.squarespace-cdn.com/content/v1/53c9cdf3e4b0669c8d19e691/1568069907418-600X29WQ8IDLJ4WEBILW/ke17ZwdGBToddI8pDm48kMr7cO87uK4i5FGmPfgnAmJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0tLQ7Yw5rvbjD09fusQ6zruw_237OMvrlo6Pc0CJdbfdeTHYj9jtBJKhNQnMMHkZZQ/Codefi-FieldFlow-17.png?format=750w">
-            <span>Profound Velocity</span>
-        </div></div>
-        <div><div>
-            <img src="https://images.squarespace-cdn.com/content/v1/53c9cdf3e4b0669c8d19e691/1568069907418-600X29WQ8IDLJ4WEBILW/ke17ZwdGBToddI8pDm48kMr7cO87uK4i5FGmPfgnAmJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0tLQ7Yw5rvbjD09fusQ6zruw_237OMvrlo6Pc0CJdbfdeTHYj9jtBJKhNQnMMHkZZQ/Codefi-FieldFlow-17.png?format=750w">
-            <span>SupermanCTF</span>
-        </div></div>
-        <div><div>
-            <img src="https://images.squarespace-cdn.com/content/v1/53c9cdf3e4b0669c8d19e691/1568069907418-600X29WQ8IDLJ4WEBILW/ke17ZwdGBToddI8pDm48kMr7cO87uK4i5FGmPfgnAmJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0tLQ7Yw5rvbjD09fusQ6zruw_237OMvrlo6Pc0CJdbfdeTHYj9jtBJKhNQnMMHkZZQ/Codefi-FieldFlow-17.png?format=750w">
-            <span>Lunaservers</span>
-        </div></div>
-      </div>
+      <div id="content" class="content"></div>
+      <p style="font-size:18px;line-height: normal;">I am 26 years old from Helsinki, I am open-minded, cheerful, very social and I understand "kokonaisuuksia". I love to learn something new and hold on to it! (More about me and my life, you can read here "About").</p>
+        <div style="padding:0 0 0 11px;">
+          <div style="padding:0 0 30px;border-bottom:1px dashed var(--abg);">
+            <h3 style="font-size:18px;line-height: normal;">Work</h3>
+            <ul style="font-size:14px;line-height: 1.5rem;list-style: none;padding:0;">
+              <li>01/01/11 - Researcher User Interface @ Nokia Research @ Santa Monica, CA (11 Months)</li>
+              <li>06/01/10 - Creative Coder @ Motion Theory / Mirada @ Venice, CA (4 Months)</li>
+            </ul>
+          </div>
+          <div style="padding:0 0 30px;">
+            <h3 style="font-size:18px;line-height: normal;">Hobby</h3>
+            <ul style="font-size:14px;line-height: 1.5rem;list-style: none;padding:0;">
+              <li>01/01/11 - Researcher User Interface @ Nokia Research @ Santa Monica, CA (11 Months)</li>
+              <li>06/01/10 - Creative Coder @ Motion Theory / Mirada @ Venice, CA (4 Months)</li>
+            </ul>
+          </div>
+          <div style="padding:0 0 30px;">
+            <h3 style="font-size:18px;line-height: normal;">Skill</h3>
+            <ul style="font-size:14px;line-height: 1.5rem;list-style: none;padding:0;">
+              <li>01/01/11 - Researcher User Interface @ Nokia Research @ Santa Monica, CA (11 Months)</li>
+              <li>06/01/10 - Creative Coder @ Motion Theory / Mirada @ Venice, CA (4 Months)</li>
+            </ul>
+          </div>
+          <div style="padding:0 0 30px;">
+            <h3 style="font-size:18px;line-height: normal;">Education</h3>
+            <ul style="font-size:14px;line-height: 1.5rem;list-style: none;padding:0;">
+              <li>01/01/13 - KPAO ICT Information and communication technologies, Helsinki Finland (36 months)</li>
+              <li>06/01/10 - Creative Coder @ Motion Theory / Mirada @ Venice, CA (4 Months)</li>
+            </ul>
+          </div>
+          <div style="padding:0 0 30px;">
+            <h3 style="font-size:18px;line-height: normal;">Organizations</h3>
+            <ul style="font-size:14px;line-height: 1.5rem;list-style: none;padding:0;">
+              <li>2013-2020 - FLUG Finnish Linux User Group Ry (11 Months)</li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
     </div>
+
+    
+
     <!-- <div class="locbloc3">
       <h2>Who am I?</h2>
       <div class="tabbytabby">
@@ -99,41 +147,29 @@
   </main>
  </body>
  <script>
-   let tabbytabby = document.querySelectorAll(".tabbytabs");
-   let tabbycontent = document.querySelector(".tabbycontent");
-  //  let helper2 = document.querySelector(".tabbytabs").classList.contains("test", true);
-//   So when your page loads, you should do
-// 1) Document query all links you want (link 1, link 2, link 3 etc.) and save this list of links in a global variable
-// 2) Add an event listener to all the links
-// 3) The event listener will add the "test" class to 
-// its event.target and iterate through all the links that are
-//  event.target !== link in the global variable to remove the "test" class
-    //otetaan käyttöön tabbytabby let ja sieltä
-    //lisätään itsellemme joka seuraa klikkiä
-    //ja jos totta niin tee X
-    // You should generally avoid queries like document.querySelectorAll("div:not(.this-not)");,
-    //  especially when you don't save the result and fire that query on every click :open_mouth:
- //DOM queries are relatively expensive, especially when you scorch the entire DOM for an element
- // that's used all over the place like div :stuck_out_tongue:    
 
-//  Yes :open_mouth: Do note that it's relative. It will take a significantly-sized HTML page with quite a few expensive DOM queries to be anything close to noticeable. However it's generally considered bad practice to treat DOM queries like they're free. You should try to minimize that by saving the results in variables to reuse them later (instead of firing the same DOM query again) :pray:
+  let contentDiv = document.getElementById('content');
 
-    // Array.from(tabbytabby).forEach((tabbytabbytabb) => {
-    //   tabbytabbytabb.addEventListener('click', (e) => {
-    //     e.preventDefault();
-    //     if (tabbytabbytabb.classList.contains("test") == false) {
-    //     tabbytabbytabb.classList.toggle("test", true); 
-    //     console.log("thisworks")
-    //     } else if (tabbytabbytabb.classList.contains("test") == true) {
-    //     tabbytabbytabb.classList.toggle("test", false);
-    //     console.log("thisworkstoo")
-    //       } return ;
-    //     });
-    // });  
-  /* let ppt = document.selectQuery("span .highlight");
+let routes = {
+  '/': homePage,
+  '/index.html': homePage,
+  '/about': aboutPage,
+  '/work': workPage,
+  '/vitae': resumePage,
+  '/contact': contactPage,
+};
 
-    // Add selector + function that makes "bubble"
-     
-  */ 
+window.onpopstate = () => {
+  contentDiv.innerHTML = routes[window.location.pathname];
+}
+
+let onNavItemClick = (pathName) => {
+  window.history.pushState({}, pathName, window.location.origin + pathName);
+  contentDiv.innerHTML = routes[pathName];
+}
+
+contentDiv.innerHTML = routes[window.location.pathname];
+
  </script>
+ 
 </html>

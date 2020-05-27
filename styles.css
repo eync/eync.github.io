@@ -55,7 +55,7 @@
 		grid-template-rows: auto auto 1fr;
 	}
 	.locbloc1{
-		grid-column: span 8;
+		grid-column: span 4;
 		display: grid;
 		justify-items: left;
 		align-items: left;
@@ -70,7 +70,7 @@
 		}
 	.locbloc-menu{
 		grid-column: span 4;
-		display: none;
+		display: block;
 		justify-items: right;
 		align-items: right;
 		
@@ -186,16 +186,19 @@
 	/* Main Boxes area */
 	.fullgrid{grid-column: span 8;border-bottom:1px dashed var(--abg);}
 	
-	.fullgrid > div {padding:5% 0;display:grid;grid-gap: 40px 15px;grid-template-columns: repeat(3, 1fr);}
-	.fullgrid > .alterfull {} 
+	.fullgrid > div.content > div {padding:5% 0;display:grid;grid-gap: 40px 15px;grid-template-columns: repeat(3, 1fr);}
 	blockquote p {display: flex;align-items: center;padding: 15px;color: var(--Musta);font-size: 24px;font-weight: bold;}
 
 	blockquote p:before {content: '”';font-family: var(--lf);padding: 0 15px;margin: 0px;font-size: 120px;color: var(--jacky);}
 	blockquote header {display: flex;justify-content: center;align-items: center;height: 1.9rem;margin: 1rem;font-size: 16px;text-transform: uppercase;letter-spacing: 2px;}
 
+	#instagram-feed-demo {margin:auto;padding:20px;}
+	#instagram-feed-demo > div.instagram_gallery {padding:5% 0;display:grid;grid-gap: 40px 15px;grid-template-columns: repeat(3, 1fr);}
+	#instagram-feed-demo > div > a {padding:15px;}
+	#instagram-feed-demo > div > a > img{background:var(--jacky);display:block;width:250px;height:200px;align-self:center;justify-self:center;}
 
-	.fullgrid > div > div {display:none;padding:0;grid-column:span 1;}
-	.fullgrid > div > div > div{display:grid;grid-gap: 25px;grid-template-columns:1fr; grid-template-rows: 200px 25px;}
+	.fullgrid > div.content > div > div {padding:0;grid-column:span 1;}
+	.fullgrid > div.content > div > div > div{display:grid;grid-gap: 25px;grid-template-columns:1fr; grid-template-rows: 200px 25px;}
 	
-	.fullgrid > div > div > div > img {background:var(--jacky);display:block;width:250px;height:200px;align-self:center;justify-self:center;}
-	.fullgrid > div > div > div > span {font-size: 12px;letter-spacing: 2px;text-transform: uppercase;display:block;line-height: 0px;justify-self:center;align-self:center;padding:0 0 25px;}
+	.fullgrid > div.content > div > div > div > img {background:var(--jacky);display:block;width:250px;height:200px;align-self:center;justify-self:center;}
+	.fullgrid > div.content > div > div > div > span {font-size: 12px;letter-spacing: 2px;text-transform: uppercase;display:block;line-height: 0px;justify-self:center;align-self:center;padding:0 0 25px;}
