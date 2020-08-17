@@ -179,14 +179,75 @@
 			
 		}
 	}
+	#title{
+		font-size:14px;line-height: normal;
+        text-transform: uppercase;
+		letter-spacing: 5px;
+		padding:0;
+		margin:0;
+	}
+	#title:before {
+		content:"■";
+		padding:0 1em 0 0;
+	}
+	#title.lower:before {
+		content:none;
+		padding:0;
+	}
+	
+	#cvhelper > div > h3 {padding:0;margin:0;font-family: var(--lf);}
+	#cvfooter > div > h3 {padding:0;margin:0;text-transform: capitalize;}
+	.wrapper {
+		width: 100%;
+	}
+	#arrow {font-size: 100px;padding:0 0.5em;color:var(--abg);}
+
+	.cattit {font-size:18px;line-height: normal;
+		text-transform: uppercase;
+		letter-spacing: 2px;color:var(--white);}
+	.cattit.two {padding:20px 0 0;border-top:3px dashed var(--purple);}
+	
+	.progress-bar {
+		width: 70%;
+		height:12px;
+		background-color: #e0e0e0;
+		padding: 3px;
+		border-radius: 3px;
+		box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+	}
+	
+	.progress-bar-fill {
+		display: block;
+		height: 6px;
+		background-color: var(--yellow);
+		border-radius: 3px;
+		
+		transition: width 500ms ease-in-out;
+	}
+	ul#edu {margin:0;padding:0 0.44em;}
+	ul#edu > li {font-size:14px;line-height: 1.5rem;list-style: none;padding:0;text-transform: uppercase;}
+	/* ul#edu > li.year, ul#edu > li.description {padding:0 1.6em;} */
+	ul#edu > li.year {font-size:14px;color:var(--white);}
+	ul#edu > li.education {list-style-type: square;font-size: 18px;}
+	ul#edu > li.description {padding:0 0 10px;}
+
 	footer{grid-column: span 8;background:var(--abg);padding:10px 50px;font-size:26px; }
 	footer > div {display:grid; grid-template-columns: repeat(3, 1fr);}
 	footer > div > a {font-family: var(--lf);grid-column:span 1; padding:0 15px 0 0;}
-	footer > div > span {grid-column:span 2;justify-self:right;}
+	footer > div > a:hover {background:none;}
+	footer > div > p {grid-column:span 2;justify-self:right;}
 	/* Main Boxes area */
 	.fullgrid{grid-column: span 8;border-bottom:1px dashed var(--abg);}
 	
-	.fullgrid > div.content > div {padding:5% 0;display:grid;grid-gap: 40px 15px;grid-template-columns: repeat(3, 1fr);}
+	/* .fullgrid > div.content > div {padding:5% 0;display:grid;grid-gap: 15px;grid-template-columns: repeat(3, 1fr);} */
+	.fullgrid > div.content > #helper {padding:5% 0 2%;display:grid;grid-gap: 15px;grid-template-columns: 1fr 4fr;}
+	#cvhelper {padding:1% 0;display:grid;grid-gap: 45px;grid-template-columns: 1fr 4fr;grid-template-rows: 3fr 1fr;}
+	.fullgrid > div.content > #cvfooter {padding:1% 0;display:grid;grid-gap: 45px;grid-template-columns: 1fr 4fr;}
+	.fullgrid > div.content > #helper > #resume {padding:5% 0;display:grid;grid-gap: 15px;grid-template-columns: repeat(1, 1fr);}
+	#sidebar {border-radius: 0.5em 0.25em;border-right:1px dashed var(--purple);padding:5%;background:var(--abg);color:var(--jacky);}
+	.fullgrid > div.content > #helper > #resume > div {padding:1% 0;display:grid;grid-gap: 15px;grid-template-columns: 1fr 4fr;}
+	.fullgrid > div.content > #helper > #resume > div > h3{border-right:5px dashed var(--abg);align-self: center;}
+	.fullgrid > div.content > #helper > #resume > div > ul{align-self: center;}
 	blockquote p {display: flex;align-items: center;padding: 15px;color: var(--Musta);font-size: 24px;font-weight: bold;}
 
 	blockquote p:before {content: '”';font-family: var(--lf);padding: 0 15px;margin: 0px;font-size: 120px;color: var(--jacky);}
@@ -197,8 +258,20 @@
 	#instagram-feed-demo > div > a {padding:15px;}
 	#instagram-feed-demo > div > a > img{background:var(--jacky);display:block;width:250px;height:200px;align-self:center;justify-self:center;}
 
-	.fullgrid > div.content > div > div {padding:0;grid-column:span 1;}
+	.fullgrid > div.content > div > div {padding:0;}
 	.fullgrid > div.content > div > div > div{display:grid;grid-gap: 25px;grid-template-columns:1fr; grid-template-rows: 200px 25px;}
+	#work {display:grid;grid-gap: 25px;grid-template-columns:repeat(3, 1fr);}
 	
 	.fullgrid > div.content > div > div > div > img {background:var(--jacky);display:block;width:250px;height:200px;align-self:center;justify-self:center;}
 	.fullgrid > div.content > div > div > div > span {font-size: 12px;letter-spacing: 2px;text-transform: uppercase;display:block;line-height: 0px;justify-self:center;align-self:center;padding:0 0 25px;}
+
+
+	a.btn {
+		display:block;letter-spacing: 2px;
+		background:url("IMG_4060.jpeg") var(--abg) no-repeat center;
+		background-size: cover;
+		background-position: 100% 100%;
+		font-size:18px;padding:0.1em;margin:0 4em 2em;line-height:3vh;text-align:center;text-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
+	}
+	a.btn.alt {margin:0;padding:0;}
+	a.btn:hover {background:var(--white);text-shadow:none;}

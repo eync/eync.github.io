@@ -23,7 +23,7 @@ location.hash
 );
 }
 
-let recieveRedirect = () => {
+let recieveRedirect = () => { 
 (function(location) {
 if (location.search) {
   var q = {};
@@ -41,13 +41,7 @@ if (location.search) {
 }
 }(window.location));
 }
-  recieveRedirect()
-  </script>
-    <script> 
-    let contactPage= "testing 1";
-
-
-
+  recieveRedirect();
   </script>
   <script src="pages/index.js"></script>
   <script src="pages/work.js"></script>
@@ -64,7 +58,7 @@ if (location.search) {
       <ul>
         <li><a href="#" onclick="onNavItemClick('/work'); return false;">work</a></li>
         <li><a href="#" onclick="onNavItemClick('/about'); return false;">about</a></li>
-        <li><a href="#" onclick="onNavItemClick('/contact'); return false;">contact</a></li>
+        <li><a href="#" onclick="onNavItemClick('/blog'); return false;">blog</a></li>
         <li><a href="#" onclick="onNavItemClick('/vitae'); return false;">cv</a></li>
       </ul>
     </div>
@@ -73,44 +67,7 @@ if (location.search) {
 
     <div class="fullgrid">
       <div id="content" class="content"></div>
-      <p style="font-size:18px;line-height: normal;">I am 26 years old from Helsinki, I am open-minded, cheerful, very social and I understand "kokonaisuuksia". I love to learn something new and hold on to it! (More about me and my life, you can read here "About").</p>
-        <div style="padding:0 0 0 11px;">
-          <div style="padding:0 0 30px;border-bottom:1px dashed var(--abg);">
-            <h3 style="font-size:18px;line-height: normal;">Work</h3>
-            <ul style="font-size:14px;line-height: 1.5rem;list-style: none;padding:0;">
-              <li>01/01/11 - Researcher User Interface @ Nokia Research @ Santa Monica, CA (11 Months)</li>
-              <li>06/01/10 - Creative Coder @ Motion Theory / Mirada @ Venice, CA (4 Months)</li>
-            </ul>
-          </div>
-          <div style="padding:0 0 30px;">
-            <h3 style="font-size:18px;line-height: normal;">Hobby</h3>
-            <ul style="font-size:14px;line-height: 1.5rem;list-style: none;padding:0;">
-              <li>01/01/11 - Researcher User Interface @ Nokia Research @ Santa Monica, CA (11 Months)</li>
-              <li>06/01/10 - Creative Coder @ Motion Theory / Mirada @ Venice, CA (4 Months)</li>
-            </ul>
-          </div>
-          <div style="padding:0 0 30px;">
-            <h3 style="font-size:18px;line-height: normal;">Skill</h3>
-            <ul style="font-size:14px;line-height: 1.5rem;list-style: none;padding:0;">
-              <li>01/01/11 - Researcher User Interface @ Nokia Research @ Santa Monica, CA (11 Months)</li>
-              <li>06/01/10 - Creative Coder @ Motion Theory / Mirada @ Venice, CA (4 Months)</li>
-            </ul>
-          </div>
-          <div style="padding:0 0 30px;">
-            <h3 style="font-size:18px;line-height: normal;">Education</h3>
-            <ul style="font-size:14px;line-height: 1.5rem;list-style: none;padding:0;">
-              <li>01/01/13 - KPAO ICT Information and communication technologies, Helsinki Finland (36 months)</li>
-              <li>06/01/10 - Creative Coder @ Motion Theory / Mirada @ Venice, CA (4 Months)</li>
-            </ul>
-          </div>
-          <div style="padding:0 0 30px;">
-            <h3 style="font-size:18px;line-height: normal;">Organizations</h3>
-            <ul style="font-size:14px;line-height: 1.5rem;list-style: none;padding:0;">
-              <li>2013-2020 - FLUG Finnish Linux User Group Ry (11 Months)</li>
-              <li></li>
-            </ul>
-          </div>
-        </div>
+      
     </div>
 
     
@@ -142,7 +99,7 @@ if (location.search) {
     <!-- use later on <div class="locbloc6"></div>
     <div class="locbloc7"></div> -->
       <footer>
-        <div><a  href="https://sanjiv.info">Sanjiv</a><span>🚀⏱️👨‍🚀</span></div>
+        <div><a href="https://sanjiv.info" style="align-self: center;">Sanjiv</a><p style="font-size: 0.5em;"><span style="font-family: var(--lf);letter-spacing: 0.1em;">To get in touch, write to</span> hello@sanjiv.info.</p></div>
       </footer>
   </main>
  </body>
@@ -156,7 +113,7 @@ let routes = {
   '/about': aboutPage,
   '/work': workPage,
   '/vitae': resumePage,
-  '/contact': contactPage,
+  '/blog': "<p style='text-align:center;'>Nothing Yet</p>",
 };
 
 window.onpopstate = () => {
