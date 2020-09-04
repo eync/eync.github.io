@@ -77,11 +77,9 @@
 		padding:1em;
 	}	
 
-	/* GG.css settings */
-	i.gg-card-spades, i.gg-chevron-right, i.gg-code-slash, i.gg-profile {
-		display:inline-block;
-		align-self:center;
-	}
+	/* video fix */
+	div > video {object-fit: cover;width: 100%;}
+
 	/* anchors */
 	#home, #set, #works, #me, #contactme{overflow-anchor: auto;}
 
