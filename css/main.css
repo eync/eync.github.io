@@ -49,7 +49,24 @@
 	blockquote p:before {content: '”';font-family: var(--lf);padding: 0 15px;margin: 0px;font-size: 120px;}
 	blockquote p:after {content: '';font-family: var(--lf);padding: 0 15px;margin: 0px;font-size: 120px;}
 	blockquote header {display: grid;justify-self:center;height: 1.9rem;margin: 0rem;font-size: 16px;text-transform: uppercase;letter-spacing: 2px;}
-
+	@media (max-width: 420px) { 
+		#slogan {font-size: smaller;}
+		ul.menu {letter-spacing: 0.1em; font-weight: 700;}
+		ul.menu > li {
+			grid-column: span 12 ;
+			display: block;
+			padding:1em;
+		}	
+	}
+	@media (min-width: 420px) { 
+		#slogan {font-size: larger;}
+		ul.menu {letter-spacing: .1rem;}
+		ul.menu > li {
+			grid-column: span 3 ;
+			display: block;
+			padding:1em;
+		}	
+	}
 	ul.menu  {
 		list-style-type: none;
 		margin: 1px;
@@ -58,7 +75,6 @@
 		text-align: center;
 		color: var(--black);
 		text-transform: uppercase;
-		letter-spacing: .1rem;
 		grid-column:1;
 	  }
 	ul.menu > li > a:hover {
@@ -72,10 +88,6 @@
 		font-weight: 700;
 		font-size: 1rem;
 		text-decoration:none;}
-	ul.menu > li {grid-column: span 3 ;
-		display: block;
-		padding:1em;
-	}	
 
 	/* video fix */
 	div > video {object-fit: cover;width: 100%;}
