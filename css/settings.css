@@ -74,7 +74,7 @@ ol, ul {list-style: none; }
         --primary-button-hover:var(--gray-4); --primary-button-hover-bg:var(--gray-6); --primary-button-hover-bdr:var(--primary-button-bdr:); 
 
         --a-button:var(--primary-button);--a-button-bg:var(--primary-button-bg);--a-button-bdr:var(--primary-button-bdr);
-        --a-button-hover:var(--primary-button-hover);--a-button-hover-bg:var(--primary-button-hover-bg);--a-button-hover-bdr:var(--primary-button-hover-bdr);
+        --a-button-hover:var(--white);--a-button-hover-bg:var(--black);--a-button-hover-bdr:var(--primary-button-hover-bdr);
 
                 /* Alternative buttons */
                 /*   Could used to make different color classes for example */

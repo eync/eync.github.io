@@ -87,13 +87,21 @@
 		color: var(--gray-10);
 		font-weight: 700;
 		font-size: 1rem;
-		text-decoration:none;}
+		text-decoration:none;
+	}
+	/* projects page */
+	div.span4 > p > span {display: block;font-size:0.6em;}
+	div.span4 > h3 { font-size: 1.5em;}
+	div.span4 > ul.linkit > li { list-style-type: none;text-align: center;display: inline-block; margin:0 0.9em 0 0;}
+	div.span4 > ul.linkit { list-style-type: none;}
+	div.span4 > img { padding:0.2em;background:var(--white);width:90%;border-radius: 0.25em;box-shadow: 1px 1px 10px 1px var(--gray-4);}
 
 	/* video fix */
 	div > video {object-fit: cover;width: 100%;}
-
+	
 	/* anchors */
 	#home, #set, #works, #me, #contactme{overflow-anchor: auto;}
+	#backtohome {font-weight:500;text-decoration: none;text-transform: uppercase;}
 
 	/* animations */
 	@keyframes fadeIn{0% {opacity:0;}100% {opacity:1;}}
