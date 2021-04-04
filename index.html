@@ -18,10 +18,11 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/all.min.css">
+	<script src="app.js"></script>
 	<!-- && Favicon
 	================= -->
 	<link rel="icon" type="image/png" href="img/favicon.ico">
-
+	<script src="https://cdn.jsdelivr.net/npm/markdown-to-json@0.5.4/lib/m2j.min.js"></script>
 	<!-- && IE support
 	================= -->
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -31,7 +32,7 @@
   		<div class="base">
 			<div class="grid">
 				<div id="home" class="item span12 sc ac" style="grid-template-rows:35% 5% 1%; min-height:90%;max-height:100%;height:100vh;">
-					<h1 class="ase"><a id="logo" href="https://sanjiv.info/">Sanjiv</a></h1>
+					<h1 class="ase stereo"><a id="logo" href="https://sanjiv.info/">Sanjiv</a></h1>
 					<p id="slogan" class="asl">web developer, & wannabe astronaut 🚀 </p>
 					<ul class="asl menu grid">
 						<li><a href="#me"><i class="far fa-user-circle"></i> About</a></li>
@@ -54,7 +55,7 @@
 							<a href="#works" class="button">Projects</a>
 						</div>
 						<div class="item span12">
-							<img src="img/IMG_4060.jpeg" alt="" style="">
+							<div class="stereo-img"></div>
 						</div>
 						<div class="item span12 tc">
 							<blockquote>
@@ -105,80 +106,24 @@
 							<h3><i class="fab fa-grav"></i> Skills</h3>
 							<p>That I'm comfortable with.</p>
 							<div class="grid">
-								<ul class="item span5">
-									<li>Web Design</li>
-
-									<div class="wrapper" style="grid-template-rows: 1fr;">
-										<div class="progress-bar">
-										 <span class="progress-bar-fill" style="width: 87%;"></span>
-										</div>
-									</div>
-
-									<li>Graphic Design</li>
-									<div class="wrapper" style="grid-template-rows: 1fr;">
-										<div class="progress-bar">
-										 <span class="progress-bar-fill" style="width: 88%;"></span>
-										</div>
-									</div>
-
-									<li>User Experience</li>
-									<div class="wrapper" style="grid-template-rows: 1fr;">
-										<div class="progress-bar">
-										 <span class="progress-bar-fill" style="width: 75%;"></span>
-										</div>
-									</div>
-
-									<li>HTML</li>
-									<div class="wrapper" style="grid-template-rows: 1fr;">
-										<div class="progress-bar">
-										 <span class="progress-bar-fill" style="width: 85%;"></span>
-										</div>
-									</div>
-
-									<li>CSS</li>
-									<div class="wrapper" style="grid-template-rows: 1fr;">
-										<div class="progress-bar">
-										 <span class="progress-bar-fill" style="width: 85%;"></span>
-										</div>
-									</div>
-
-									<li>Javascript</li>
-									<div class="wrapper" style="grid-template-rows: 1fr;">
-										<div class="progress-bar">
-										 <span class="progress-bar-fill" style="width: 75%;"></span>
-										</div>
-									</div>
-
-									<li>Linux (Debian/Ubuntu/CentOS)</li>
-									<div class="wrapper" style="grid-template-rows: 1fr;">
-										<div class="progress-bar">
-										 <span class="progress-bar-fill" style="width: 67%;"></span>
-										</div>
-									</div>
-
-								</ul>
-								<div class="item span7">
-									<p class="itsTooTight" style="padding:1em 0;">HTML, CSS, Javascript, NodeJS, Express, MongoDB, PHP, MySQL...</p>
-									<p class="itsTooTight" style="padding:1em 0;"> <em> I am currently learning languages such as: React & Typescript </em> </p>
-									<p class="itsTooTight" style="padding:1em 0;">WordPress, Drupal, SMF, SteamAPI, GIT.</p>
-									<p class="itsTooTight" style="padding:1em 0;">GIMP, InkScape, Adobe Photoshop & Illustrator.</p>
-								</div>
-								<div id="contactme" class="item span12">
-									<h3><i class="fas fa-chevron-right"></i> Let's get in touch!</h3>
-									<p>I love to speak about projects, opportunities and to help people to learn programming!</p>
-									<a class="button" href="mailto:hello@sanjiv.info"><i class="far fa-envelope"></i> Email me</a>
-								
-									<p><strong> You can find me: </strong></p> 
-									<a class="button" href="https://github.com/eync"><i class="fab fa-github"></i> GitHub</a>
-									<a class="button" href="https://dev.to/eync"><i class="fab fa-dev"></i> Dev.to</a>
-									<a class="button" href="https://dribbble.com/ndugu"><i class="fab fa-dribbble"></i> Dribbble</a>
+								<div class="item span6" id="loader">
+									loading please wait...
 								</div>
 							</div>
 
 						</div>
 
-						<div class="item span6 as">
+						<div class="item span6 asl clear-top">
 							<img src="img/IMG_2645.jpeg" alt="" style="">
+							<h3 id="contact"><i class="fas fa-chevron-right"></i> Let's get in touch!</h3>
+							<p>I love to speak about projects, opportunities and to help people to learn programming!</p>
+							<a class="button" href="mailto:hello@sanjiv.info"><i class="far fa-envelope"></i> Email me</a>
+						
+							<p><strong> You can find me: </strong></p> 
+							<a class="button" href="https://www.linkedin.com/in/sanjivrana/"><i class="fab fa-linkedin"></i> Linkedin</a>
+							<a class="button" href="https://github.com/eync"><i class="fab fa-github"></i> GitHub</a>
+							<a class="button" href="https://dev.to/eync"><i class="fab fa-dev"></i> Dev.to</a>
+							<a class="button" href="https://dribbble.com/ndugu"><i class="fab fa-dribbble"></i> Dribbble</a>
 						</div>	
 				</div>
 			</div>

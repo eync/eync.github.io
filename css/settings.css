@@ -8,6 +8,7 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url("https://use.typekit.net/jgy0yay.css");
 
 /* && CSS RESET 
 ================================================== */
@@ -28,9 +29,10 @@ ol, ul {list-style: none; }
         --columns:; /* default value is 12, leave it empty if you want to keep 12 columns setting */
 
         /*	===========FONT(s)==========  */
-        --font-main:'Montserrat', sans-serif;
-        --font-alt:'Source Code Pro';
-        --font-default:sans-serif;
+        --font-main: raleway, sans-serif;
+        --font-alt: var(--font-main);
+        --font-title: ccsignlanguage, sans-serif;
+        --font-default: sans-serif;
 
         /*	===========PRIMARY COLORS==========  */ 
             /* FONT COLOR(s) */
@@ -95,7 +97,7 @@ ol, ul {list-style: none; }
         --text-base-value:1em;
         --text-scale-value: 0.5vh;
 	 	 	 	 	 
-		--h1: 3em;
+		--h1: 3.5em;
 		--h2: 2.5em;
 		--h3: 1.938em;
 		--h4: 1.563em;
