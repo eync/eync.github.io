@@ -177,19 +177,20 @@
 	}
 	
 	div.span4 > .blob1 {
-	border-radius: 43% 57% 37% 63% / 51% 40% 60% 49% ;
+		border-radius: 43% 57% 37% 63% / 51% 40% 60% 49% ;
 	}
 	div.span4 > .blob2 {
-	border-radius: 65% 35% 54% 46% / 62% 40% 60% 38% ;
+		border-radius: 65% 35% 54% 46% / 62% 40% 60% 38% ;
 	}
 	div.span4 > .blob3 {
-	border-radius: 63% 37% 37% 63% / 50% 67% 33% 50%  ;
+		border-radius: 63% 37% 37% 63% / 50% 67% 33% 50%  ;
 	}
 	
 	div.span4 > img {
 		margin: 0.2em;
 		background: var(--white);
-		width: 100%;
+		width: 90%;
+		height: 390px;
 	  	transition: all 1s ease-in;
 	}
 	
@@ -202,6 +203,7 @@
 	}
 	div.span4 > div.noimg:hover {
 		border-radius: 0;
+		width:100%;
 		transition: all .5s ease-out;
 	}
 	div.span4 > p > span:before {
@@ -221,7 +223,7 @@
 	  padding:2rem;
 	}
 	div.span4 > div.noimg {
-	  width: 100%;
+	  width: 90%;
 	  display: grid;
 	  font-weight: 700;
 	  height: 390px;
@@ -241,6 +243,7 @@
 	}
 	div.span4 > span.client {
 		display: block;
+		padding: 0 0 1em 0;
 	}
 
 	/* stereo for images */
