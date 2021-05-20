@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     const home_url = document.URL.includes("/" || "/index.html");
     const projects_url = document.URL.includes("/projects.html");
     const skills_json = "https://gist.githubusercontent.com/eync/f6dca68878c4f0d7749feb0213576a69/raw/dcc388dc636545d7c9f6f705dd10ea4628bcf823/skills.json";
-    const projects_json = "https://gist.githubusercontent.com/eync/a28c367b00fef2f5fb909d4eb2dc8e74/raw/dba205cd07c07c6c4891ff58bbdc29262624936d/projectlist.json";
+    const projects_json = "./projectlist.json";
 
     fetch(!projects_url ? skills_json : projects_json)
     .then(response => response.json())
@@ -52,10 +52,22 @@ document.addEventListener('DOMContentLoaded', function(event) {
                 </div>
                 `
             } else {
+                console.log(z.stuff.clang)
                 addHtml += await `
-                <div class="span4 jc tc"><h6>${z.project ? `${z.project}` : "-"}</h6><span class="client">${z.client ? `${z.client}` : `-`}</span>
-                ${z.links.image ? `<img class="blob${randomNumbers()}" src="${z.links.image}" alt="" width="100%">` : `<div class='noimg color${randomNumbers()} blob${randomNumbers()}'>IMAGE NOT AVAILABLE</div>`}
-                <p>${z.description ? `${z.description}` : `-`}<span>${z.stuff.clang ? `${z.stuff.clang.join(", ")}` : `-`}</span></p></div>
+                <div class="span4 jc tc">
+                    <h6>${z.project ? `${z.project}` : "-"}</h6>
+                    <span class="client">${z.client ? `${z.client}` : `-`}</span>
+                    ${z.links.image ? 
+                        `<img class="blob${randomNumbers()}" src="${z.links.image}" alt="" width="100%">` :
+                        `<div class='noimg color${randomNumbers()} blob${randomNumbers()}'>IMAGE NOT AVAILABLE</div>`
+                    }
+                    <p class="underline">${z.description ? `${z.description}` : `-`}</p>
+                    <p>
+                        <span>${z.stuff.clang ? `<img src="img/code.svg" class="icon" alt="code languages"/>${z.stuff.clang.length > 0 ? z.stuff.clang.join(", ") : z.stuff.clang}` : `-`}</span>
+                        <span>${z.stuff.software ? `<img src="img/software.svg" class="icon" alt="software"/>${z.stuff.software.length > 0 ? z.stuff.software.join(", ") : z.stuff.software}` : `-`}</span>
+                        <span>${z.stuff.server ? `<img src="img/server.svg" class="icon" alt="server"/>${z.stuff.server}` : `-`}</span>
+                    </p>
+                </div>
                 `
             }
             }

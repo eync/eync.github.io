@@ -1,0 +1,241 @@
+[{
+    "client": "Digitalents Helsinki",
+    "project": "Aava",
+    "description": "Project management tool",
+    "category": "Frontend",
+    "links": {
+        "url": "",
+        "github": "",
+        "image": ""
+    },
+    "stuff": {
+        "clang": ["Javascript", "React"],
+        "software": "",
+        "server": "Azure"
+    }
+},
+{
+    "client": "City of Helsinki - City Executive Office",
+    "project": "Data management project",
+    "description": "Integration",
+    "category": "BI",
+    "links": {
+        "url": "",
+        "github": "",
+        "image": ""
+    },
+    "stuff": {
+        "clang": ["MySQL"],
+        "software": ["PowerBI", "Power Automate", "Teams Integration"],
+        "server": "Azure"
+    }
+},
+{
+    "client": "City of Helsinki - Stadin AO",
+    "project": "Kasvu - SoTe project",
+    "description": "App for student grading & task distribution",
+    "category": "Frontend & Backend",
+    "links": {
+        "url": "",
+        "github": "",
+        "image": ""
+    },
+    "stuff": {
+        "clang": ["Javascript", "React", "Node.js", "MySQL"],
+        "software": "",
+        "server": "Azure"
+    }
+},
+{
+    "client": "SuperBro",
+    "project": "Open-Source CSS framework",
+    "description": "Lightweight CSS framework",
+    "category": "Frontend",
+    "links": {
+        "url": "",
+        "github": "",
+        "image": "https://sanjiv.info/primg/superbro.png"
+    },
+    "stuff": {
+        "clang": ["html", "css", "js"],
+        "software": "",
+        "server": ""
+    }
+},
+{
+    "client": "NewCo Helsinki",
+    "project": "Website",
+    "description": "",
+    "category": "Frontend",
+    "links": {
+        "url": "",
+        "github": "",
+        "image": "https://sanjiv.info/primg/NewCoHelsinki.png"
+    },
+    "stuff": {
+        "clang": ["html", "css"],
+        "software": "",
+        "server": ""
+    }
+},
+{
+    "client": "Mun Firma Oy",
+    "project": "Website",
+    "description": "",
+    "category": "Frontend",
+    "links": {
+        "url": "",
+        "github": "",
+        "image": "https://sanjiv.info/primg/MunFirma.png"
+    },
+    "stuff": {
+        "clang": ["html", "css", "js", "gsap"],
+        "software": "",
+        "server": ""
+    }
+},
+{
+    "client": "Kallion Pesula Oy",
+    "project": "Website",
+    "description": "",
+    "category": "Frontend",
+    "links": {
+        "url": "",
+        "github": "",
+        "image": "https://sanjiv.info/primg/KallionPesula.png"
+    },
+    "stuff": {
+        "clang": ["html", "css"],
+        "software": "",
+        "server": ""
+    }
+},
+{
+    "client": "Sanjiv.info",
+    "project": "Personal website",
+    "description": "",
+    "category": "Frontend",
+    "links": {
+        "url": "",
+        "github": "",
+        "image": "https://sanjiv.info/primg/SanjivInfo.png"
+    },
+    "stuff": {
+        "clang": ["html", "css", "js"],
+        "software": "",
+        "server": ""
+    }
+},
+{
+    "client": "Fysio Clinic",
+    "project": "Website",
+    "description": "",
+    "category": "Frontend",
+    "links": {
+        "url": "",
+        "github": "",
+        "image": "https://sanjiv.info/primg/FysioClinic.png"
+    },
+    "stuff": {
+        "clang": ["html", "css", "js"],
+        "software": "",
+        "server": ""
+    }
+},
+{
+    "client": "Make Style",
+    "project": "Website",
+    "description": "",
+    "category": ["Fullstack", "DevOps"],
+    "links": {
+        "url": "",
+        "github": "",
+        "image": "https://sanjiv.info/primg/make.png"
+    },
+    "stuff": {
+        "clang": ["html", "css", "php", "sql"],
+        "software": ["Drupal", "Mysql"],
+        "server": "Linux Debian"
+    }
+},
+{
+    "client": "Brio Team",
+    "project": "Blog website project",
+    "description": "",
+    "category": ["Fullstack", "DevOps"],
+    "links": {
+        "url": "",
+        "github": "",
+        "image": ""
+    },
+    "stuff": {
+        "clang": ["html", "css", "php", "sql"],
+        "software": ["Drupal", "Mysql"],
+        "server": "Linux Debian"
+    }
+},
+{
+    "client": "Superman CTF",
+    "project": "Gaming community",
+    "description": "",
+    "category": ["Fullstack", "DevOps"],
+    "links": {
+        "url": "",
+        "github": "",
+        "image": "https://sanjiv.info/primg/SupermanCTF.png"
+    },
+    "stuff": {
+        "clang": ["html", "css", "php", "sql"],
+        "software": ["Drupal", "Mysql"],
+        "server": "Linux Debian"
+    }
+},
+{
+    "client": "Profound Velocity",
+    "project": "Gaming community",
+    "description": "",
+    "category": ["Fullstack", "DevOps"],
+    "links": {
+        "url": "",
+        "github": "",
+        "image": "https://sanjiv.info/primg/ProfoundVelocity.png"
+    },
+    "stuff": {
+        "clang": ["html", "css", "php", "sql", "python", "perl"],
+        "software": ["Drupal", "Mysql"],
+        "server": "Linux Debian"
+    }
+},
+{
+    "client": "Lunaservers",
+    "project": "Gaming community",
+    "description": "",
+    "category": ["Fullstack", "DevOps"],
+    "links": {
+        "url": "",
+        "github": "",
+        "image": "https://sanjiv.info/primg/Lunaservers.png"
+    },
+    "stuff": {
+        "clang": ["html", "css", "php", "sql", "perl"],
+        "software": "",
+        "server": "Linux Debian"
+    }
+},
+{
+    "client": "Own Project",
+    "project": "Last.FM Scrobbler",
+    "description": "Last played songs displayed in image",
+    "category": ["Fullstack", "DevOps"],
+    "links": {
+        "url": "",
+        "github": "",
+        "image": ""
+    },
+    "stuff": {
+        "clang": ["perl", "php", "php-gd"],
+        "software": "",
+        "server": "Linux Debian"
+    }
+}
+]
