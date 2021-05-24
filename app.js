@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
     async function formateData (data) {
       let addHtml = "";
+      let clang = [];
 
             for (const z of data) {
                 if (!projects_url) {
@@ -52,28 +53,43 @@ document.addEventListener('DOMContentLoaded', function(event) {
                 </div>
                 `
             } else {
-                console.log(z.stuff.clang)
+                const noItems = `<span class="no-items">-</span>`;
                 addHtml += await `
                 <div class="span4 jc tc">
-                    <h6>${z.project ? `${z.project}` : "-"}</h6>
-                    <span class="client">${z.client ? `${z.client}` : `-`}</span>
+                    <h6>${z.project ? `${z.project}` : `${noItems}`}</h6>
+                    <span class="client">${z.client ? `${z.client}` : `${noItems}`}</span>
                     ${z.links.image ? 
                         `<img class="blob${randomNumbers()}" src="${z.links.image}" alt="" width="100%">` :
                         `<div class='noimg color${randomNumbers()} blob${randomNumbers()}'>IMAGE NOT AVAILABLE</div>`
                     }
-                    <p class="underline">${z.description ? `${z.description}` : `-`}</p>
+                    <p class="underline">${z.description ? `${z.description}` : `${noItems}`}</p>
                     <p>
-                        <span>${z.stuff.clang ? `<img src="img/code.svg" class="icon" alt="code languages"/>${z.stuff.clang.length > 0 ? z.stuff.clang.join(", ") : z.stuff.clang}` : `-`}</span>
-                        <span>${z.stuff.software ? `<img src="img/software.svg" class="icon" alt="software"/>${z.stuff.software.length > 0 ? z.stuff.software.join(", ") : z.stuff.software}` : `-`}</span>
-                        <span>${z.stuff.server ? `<img src="img/server.svg" class="icon" alt="server"/>${z.stuff.server}` : `-`}</span>
+                        <span>${z.stuff.clang ? `<img src="img/code.svg" class="icon" alt="code languages"/>${z.stuff.clang.length > 0 ? z.stuff.clang.join(", ") : z.stuff.clang}` : `${noItems}`}</span>
+                        <span>${z.stuff.software ? `<img src="img/software.svg" class="icon" alt="software"/>${z.stuff.software.length > 0 ? z.stuff.software.join(", ") : z.stuff.software}` : `${noItems}`}</span>
+                        <span>${z.stuff.server ? `<img src="img/server.svg" class="icon" alt="server"/>${z.stuff.server}` : `${noItems}`}</span>
+                        <span>${z.links.url ? `<img src="img/link.svg" class="icon" alt="server"/>${z.links.url}` : `${noItems}`}</span>
+                        <span>${z.links.github ? `<img src="img/github.svg" class="icon" alt="server"/>${z.links.github}` : `${noItems}`}</span>
                     </p>
                 </div>
                 `
+                for (let x of z.stuff.clang) {
+                    clang.push(x)
+                }
             }
             }
             load(addHtml)
-
+            loadClangs(clang.reduce(
+                (gather,on) => 
+                  {
+                    gather[on] = 1 + gather[on] || 1;
+                    return gather;
+                  },{}
+            ))
         
+    }
+    
+    function loadClangs(lang) {
+        for(let x in lang) document.getElementById("clanguages").innerHTML += `<div class="chip">${x} (${lang[x]})</div> `;
     }
 
     function load(getHtml) {
