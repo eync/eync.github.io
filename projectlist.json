@@ -37,7 +37,7 @@
     "category": "Frontend & Backend",
     "links": {
         "url": "",
-        "github": "",
+        "github": "https://github.com/kasvu/kasvu",
         "image": ""
     },
     "stuff": {
@@ -47,17 +47,48 @@
     }
 },
 {
-    "client": "SuperBro",
-    "project": "Open-Source CSS framework",
-    "description": "Lightweight CSS framework",
+    "client": "Corona Tracker",
+    "project": "Corona Stats Project",
+    "description": "Corona Stats Hobby project",
     "category": "Frontend",
     "links": {
-        "url": "",
-        "github": "",
+        "url": "https://coronatracker.dev/",
+        "github": "https://github.com/eync/corona-tracker.js"
+    },
+    "stuff": {
+        "clang": ["HTML", "CSS", "Javascript"],
+        "software": "",
+        "server": ""
+    }
+},
+{
+    "client": "SuperBro",
+    "project": "React Components",
+    "description": "React version of SuperBro CSS framework",
+    "category": "Frontend",
+    "links": {
+        "url": "https://superbro.dev/",
+        "github": "https://github.com/eync/superbro-react",
         "image": "https://sanjiv.info/primg/superbro.png"
     },
     "stuff": {
-        "clang": ["html", "css", "js"],
+        "clang": ["React", "HTML", "CSS", "Javascript"],
+        "software": "",
+        "server": ""
+    }
+},
+{
+    "client": "SuperBro",
+    "project": "CSS framework",
+    "description": "Lightweight CSS framework",
+    "category": "Frontend",
+    "links": {
+        "url": "https://superbro.dev/",
+        "github": "https://github.com/eync/superbro",
+        "image": "https://sanjiv.info/primg/superbro.png"
+    },
+    "stuff": {
+        "clang": ["HTML", "CSS", "Javascript"],
         "software": "",
         "server": ""
     }
@@ -68,12 +99,12 @@
     "description": "",
     "category": "Frontend",
     "links": {
-        "url": "",
+        "url": "https://newcohelsinki.fi/fi/",
         "github": "",
         "image": "https://sanjiv.info/primg/NewCoHelsinki.png"
     },
     "stuff": {
-        "clang": ["html", "css"],
+        "clang": ["HTML", "CSS"],
         "software": "",
         "server": ""
     }
@@ -84,12 +115,12 @@
     "description": "",
     "category": "Frontend",
     "links": {
-        "url": "",
+        "url": "https://munfirma.fi/",
         "github": "",
         "image": "https://sanjiv.info/primg/MunFirma.png"
     },
     "stuff": {
-        "clang": ["html", "css", "js", "gsap"],
+        "clang": ["HTML", "CSS", "Javascript", "GSAP"],
         "software": "",
         "server": ""
     }
@@ -100,12 +131,12 @@
     "description": "",
     "category": "Frontend",
     "links": {
-        "url": "",
+        "url": "https://kallionpesula.com/",
         "github": "",
         "image": "https://sanjiv.info/primg/KallionPesula.png"
     },
     "stuff": {
-        "clang": ["html", "css"],
+        "clang": ["HTML", "CSS"],
         "software": "",
         "server": ""
     }
@@ -121,7 +152,7 @@
         "image": "https://sanjiv.info/primg/SanjivInfo.png"
     },
     "stuff": {
-        "clang": ["html", "css", "js"],
+        "clang": ["HTML", "CSS", "Javascript"],
         "software": "",
         "server": ""
     }
@@ -132,12 +163,12 @@
     "description": "",
     "category": "Frontend",
     "links": {
-        "url": "",
+        "url": "https://fysio-clinic.fi/",
         "github": "",
         "image": "https://sanjiv.info/primg/FysioClinic.png"
     },
     "stuff": {
-        "clang": ["html", "css", "js"],
+        "clang": ["HTML", "CSS", "Javascript"],
         "software": "",
         "server": ""
     }
@@ -153,8 +184,8 @@
         "image": "https://sanjiv.info/primg/make.png"
     },
     "stuff": {
-        "clang": ["html", "css", "php", "sql"],
-        "software": ["Drupal", "Mysql"],
+        "clang": ["HTML", "CSS", "PHP", "MySQL"],
+        "software": ["Drupal", "MySQL"],
         "server": "Linux Debian"
     }
 },
@@ -169,8 +200,8 @@
         "image": ""
     },
     "stuff": {
-        "clang": ["html", "css", "php", "sql"],
-        "software": ["Drupal", "Mysql"],
+        "clang": ["HTML", "CSS", "PHP", "MySQL"],
+        "software": ["Drupal", "MySQL"],
         "server": "Linux Debian"
     }
 },
@@ -185,8 +216,8 @@
         "image": "https://sanjiv.info/primg/SupermanCTF.png"
     },
     "stuff": {
-        "clang": ["html", "css", "php", "sql"],
-        "software": ["Drupal", "Mysql"],
+        "clang": ["HTML", "CSS", "PHP", "MySQL"],
+        "software": ["Drupal", "MySQL"],
         "server": "Linux Debian"
     }
 },
@@ -201,8 +232,8 @@
         "image": "https://sanjiv.info/primg/ProfoundVelocity.png"
     },
     "stuff": {
-        "clang": ["html", "css", "php", "sql", "python", "perl"],
-        "software": ["Drupal", "Mysql"],
+        "clang": ["HTML", "CSS", "PHP", "MySQL", "Python", "Perl"],
+        "software": ["Drupal", "MySQL"],
         "server": "Linux Debian"
     }
 },
@@ -217,7 +248,7 @@
         "image": "https://sanjiv.info/primg/Lunaservers.png"
     },
     "stuff": {
-        "clang": ["html", "css", "php", "sql", "perl"],
+        "clang": ["HTML", "CSS", "PHP", "MySQL", "Perl"],
         "software": "",
         "server": "Linux Debian"
     }
@@ -233,7 +264,7 @@
         "image": ""
     },
     "stuff": {
-        "clang": ["perl", "php", "php-gd"],
+        "clang": ["Perl", "PHP", "PHP-gd"],
         "software": "",
         "server": "Linux Debian"
     }
