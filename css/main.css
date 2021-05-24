@@ -175,6 +175,25 @@
 		padding: 1.5px 5px;
 		vertical-align: text-bottom;
 	}
+	.chip {
+		color: var(--black);
+		height: 32px;
+		display: inline-flex;
+		padding: 1rem;
+		font-size: 0.8rem;
+		box-sizing: border-box;
+		align-items: center;
+		white-space: nowrap;
+		border-radius: 20px;
+		vertical-align: middle;
+		justify-content: center;
+		background-color: #61616130;
+	}
+	.no-items {
+		color: #fff;
+		cursor: default;
+		user-select: none;
+	}
 	div.span4 {
 	  background: #FFF;
 	  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1);
@@ -218,7 +237,6 @@
 	div.span4 > p > span {
 	  display: block;
 	  font-size: 0.8em;
-	  color: #3d3d3d;
 	}
 	div.span4 > p {
 	  align-self: end;
