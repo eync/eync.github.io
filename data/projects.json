@@ -1,4 +1,36 @@
 [{
+    "client": "City of Helsinki - Stadin AO",
+    "project": "Backend project",
+    "description": "Student management app",
+    "category": "Backend",
+    "links": {
+        "url": "",
+        "github": "",
+        "image": ""
+    },
+    "stuff": {
+        "clang": ["Javascript", "Node.js", "MongoDB"],
+        "software": ["MongoDB"],
+        "server": ""
+    }
+},
+{
+    "client": "City of Helsinki - Stadin AO",
+    "project": "Ohjelmointikurssit",
+    "description": "Teaching materials - Python, Javascript",
+    "category": "Teaching materials",
+    "links": {
+        "url": "https://ohjelmointikurssit.com/",
+        "github": "",
+        "image": ""
+    },
+    "stuff": {
+        "clang": ["React", "Javascript"],
+        "software": ["Docusaurus"],
+        "server": ""
+    }
+},
+{
     "client": "Digitalents Helsinki",
     "project": "Aava",
     "description": "Project management tool",

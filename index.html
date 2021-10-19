@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
 	<!-- && Website info 
 	================= -->
-    <title>Sanjiv - Web Developer</title>
+	<title>Your Website | Superbro Minimalistic grid template</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Sanjiv - Web Developer">
-	<meta name="author" content="S.R.">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
 	<!-- && Mobile Meta (viewport)
 	================= -->
@@ -15,124 +16,130 @@
 	<!-- && CSS files 
 	================= -->
 	<link rel="stylesheet" href="css/settings.css">
+	<link rel="stylesheet" href="css/core.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/all.min.css">
-	<script src="app.js"></script>
+
+	<!-- && JS files 
+	================= -->
+	<script src="js/app.js"></script>
+	<script src="js/lang.js"></script>
+
 	<!-- && Favicon
 	================= -->
 	<link rel="icon" type="image/png" href="img/favicon.ico">
-	<script src="https://cdn.jsdelivr.net/npm/markdown-to-json@0.5.4/lib/m2j.min.js"></script>
+
 	<!-- && IE support
 	================= -->
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  </head>
-  <body>
-  		<div class="base">
-			<div class="grid">
-				<div id="home" class="item span12 sc ac" style="grid-template-rows:35% 5% 1%; min-height:90%;max-height:100%;height:100vh;">
-					<h1 class="ase stereo"><a id="logo" href="https://sanjiv.info/">Sanjiv</a></h1>
-					<p id="slogan" class="asl">web developer, & wannabe astronaut 🚀 </p>
-					<ul class="asl menu grid">
-						<li><a href="#me"><i class="far fa-user-circle"></i> About</a></li>
-						<li><a href="#works"><i class="fas fa-code"></i> Projects</a></li>
-						<li><a href="#set"><i class="fab fa-grav"></i> Skills</a></li>
-						<li><a href="#contactme"><i class="fas fa-chevron-right"></i> Contact</a></li>
-					</ul>
+	<style>
+
+	</style>
+</head>
+
+<body lang="en">
+	<main>
+		<div class="grid">
+			<!-- Work in progress
+			<div class="span12 tr">
+				<select onChange="languageTool(this)"
+					style="background-color: #ffffff30;color:#fff;border: 1px solid #02ffff;">
+					<option selected value="en">English</option>
+					<option value="fi">Suomeksi</option>
+				</select>
+			</div> -->
+			<div class="item span8">
+				<div class="stereo-img"></div>
+			</div>
+			<div class="item span4 sc as">
+				<h1 class="ase stereo-light"><a id="logo" href="https://sanjiv.info/">Sanjiv Rana</a></h1>
+				<p id="slogan" class="asl" color="#1fae84" lang="en">web developer, & wannabe astronaut 🚀 </p>
+				<ul class="sb-menu">
+					<li><a href="#me" lang="en"><i class="far fa-user-circle stereo-light"></i> About</a></li>
+					<li><a href="#works" lang="en"><i class="fas fa-code"></i> Projects</a></li>
+					<li><a href="#set" lang="en"><i class="fab fa-grav"></i> Skills</a></li>
+					<li><a href="#contactme" lang="en"><i class="fas fa-chevron-right"></i> Contact</a></li>
+				</ul>
+			</div>
+			<div class="item span12">
+				<h3 class="stereo-light" id="me"><i class="far fa-user-circle"></i> About</h3>
+				<p lang="en" class="introduction" style="font-size: 1.5em;">Sanjiv is Helsinki, Finland based Web
+					Developer. He is currently focusing on Javascript (ECMA), React, NodeJS and Mongoose +
+					MongoDB. He has past experiences with programming languages such as PHP, MySQL/ MariaDB, and
+					others.</p>
+				<p lang="en">He has since young age hosted Linux servers from different locations and server machine
+					halls.
+					He’s experience is based more on work and hobby than school. Sanjiv did graduate in year of
+					2013 as ICT technician but have had programming as hobby since he was 12 years old. Sanjiv
+					have hosted blogs where he have written different kind of tutorials related to tech or life,
+					and other random stuff. </p>
+				<p lang="en">About his personality shortly he is always cheerful, emphatic and can understand
+					whole-entities. Loves to be in help, and has learned that when helping others it helps him.
+				</p>
+				<a href="#works" class="button" lang="en">Projects</a>
+				<blockquote class="stereo-light tc">
+					<header lang="en">making difference</header>
+					<p lang="en">Empathy, visualization, anticipation of behavior and communication are Sanjiv's
+						underlying strengths.</p>
+				</blockquote>
+			</div>
+			<div class="item span7 as">
+				<video
+					style="border-radius:63% 37% 64% 36% / 43% 51% 49% 57% ;box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.66);	position: relative;width:100%;"
+					playsinline autoplay muted loop preload="auto">
+					<source src="https://sanjiv.info/img/DJI_0112_6.mp4" type="video/mp4">
+					<source src="https://sanjiv.info/img/DJI_0112_6.mp4" type="video/webm">
+					<p lang="en">Your Browser doesn't support video tag</p>
+				</video>
+			</div>
+			<div class="item span5" id="works">
+				<h3 class="stereo-light" lang="en"><i class="fas fa-code"></i> Projects</h3>
+				<p lang="en">List of some projects I am working on!</p>
+				<ul>
+					<li>SuperBro (this website was made with it)</li>
+					<li>Newco helsinki</li>
+					<li>Kallion Pesula</li>
+					<li>Fysio Clinic</li>
+					<li>Make Style</li>
+					<li>Brio Team</li>
+					<li>Profound Velocity</li>
+					<li>SupermanCTF</li>
+					<li>Lunaservers</li>
+				</ul>
+				<button lang="en" id="btn">Show more projects</button>
+			</div>
+			<div class="item span12">
+				<div id="clanguages" lang="en">
+					<h5>Programming languages in projects</h5>
 				</div>
-
-				<div class="item span12"></div>
-
-				<div id="me" class="item span12 ac" style="grid-template-rows:100%; height:100%;">
-					<div class="grid">
-						<div class="item span12 as">
-							<h3><i class="far fa-user-circle"></i> About</h3>
-							<p class="introduction" style="font-size: 1.5em;">Sanjiv is Helsinki, Finland based Web Developer. He is currently focusing on Javascript (ECMA), React, NodeJS and Mongoose + MongoDB. He has past experiences with programming languages such as PHP, MySQL/ MariaDB, and others.</p>
-							<p>He has since young age hosted Linux servers from different locations and server machine halls. 
-								He’s experience is based more on work and hobby than school. Sanjiv did graduate in year of 2013 as ICT technician but have had programming as hobby since he was 12 years old. Sanjiv have hosted blogs where he have written different kind of tutorials related to tech or life, and other random stuff. </p>
-							<p>About his personality shortly he is always cheerful, emphatic and can understand whole-entities. Loves to be in help, and has learned that when helping others it helps him. </p>
-							<a href="#works" class="button">Projects</a>
-						</div>
-						<div class="item span12">
-							<div class="stereo-img"></div>
-						</div>
-						<div class="item span12 tc">
-							<blockquote>
-								<header>making difference</header>
-								<p>Empathy, visualization, anticipation of behavior and communication are Sanjiv's underlying strengths.</p>
-							</blockquote>
-						</div>
-						<div class="item span12"></div>
-					</div>
-				</div>
-
-
-				<div class="item span12"></div>
-
-				<div id="works" class="span12 ac" style="grid-template-rows:100%; height:100%;">
-					<div class="grid">
-					<div class="item span6 as">
-						<video playsinline autoplay muted loop preload="auto"> 
-							<source src="https://sanjiv.info/img/DJI_0112_6.mp4" type="video/mp4"> 
-							<source src="https://sanjiv.info/img/DJI_0112_6.mp4" type="video/webm">
-								<p>Your Browser doesn't support video tag</p> 
-						</video>
-					</div>
-					<div class="item span6">
-						<h3><i class="fas fa-code"></i> Projects</h3>
-						<p>List of some projects I am working on!</p>
-						<ul>
-							<li>SuperBro (this website was made with it)</li>
-							<li>Newco helsinki</li>
-							<li>Kallion Pesula</li>
-							<li>Fysio Clinic</li>
-							<li>Make Style</li>
-							<li>Brio Team</li>
-							<li>Profound Velocity</li>
-							<li>SupermanCTF</li>
-							<li>Lunaservers</li>
-						</ul>
-						<a href="https://sanjiv.info/projects.html" class="button">Read more about the projects.</a>
-					</div>
-					</div>
-				</div>
-
-				<div class="item span12"></div>
-
-				<div id="set" class="item span12 ac" style="grid-template-rows:100%; height:100%;">
-					<div class="grid">
-						<div class="item span6">
-							<h3><i class="fab fa-grav"></i> Skills</h3>
-							<p>That I'm comfortable with.</p>
-							<div class="grid">
-								<div class="item span6" id="loader">
-									loading please wait...
-								</div>
-							</div>
-
-						</div>
-
-						<div class="item span6 asl clear-top">
-							<img src="img/IMG_2645.jpeg" alt="" style="">
-							<h3 id="contactme"><i class="fas fa-chevron-right"></i> Let's get in touch!</h3>
-							<p>I love to speak about projects, opportunities and to help people to learn programming!</p>
-							<a class="button" href="mailto:hello@sanjiv.info"><i class="far fa-envelope"></i> Email me</a>
-						
-							<p><strong> You can find me: </strong></p> 
-							<a class="button" href="https://www.linkedin.com/in/sanjivrana/"><i class="fab fa-linkedin"></i> Linkedin</a>
-							<a class="button" href="https://github.com/eync"><i class="fab fa-github"></i> GitHub</a>
-							<a class="button" href="https://dev.to/eync"><i class="fab fa-dev"></i> Dev.to</a>
-							<a class="button" href="https://dribbble.com/ndugu"><i class="fab fa-dribbble"></i> Dribbble</a>
-						</div>	
+				<div class="mini-grid fadeout" id="loader2" style="display:none;" lang="en">Loading please wait...</div>
+				<h3 class="stereo-light" id="set" lang="en"><i class="fab fa-grav"></i> Skills</h3>
+				<div class="mini-grid" id="loader" lang="en">
+					loading please wait...
 				</div>
 			</div>
+			<div class="item span7">
+				<h3 id="contactme" class="stereo-light" lang="en"><i class="fas fa-chevron-right"></i> Let's get in
+					touch!</h3>
+				<p lang="en">I love to speak about projects, opportunities and to help people to learn programming!</p>
+				<a class="button" href="mailto:hello@sanjiv.info" lang="en"><i class="far fa-envelope"></i> Email me</a>
 
-				
-
+				<p lang="en"><strong> You can find me: </strong></p>
+				<a class="button" href="https://www.linkedin.com/in/sanjivrana/"><i class="fab fa-linkedin"></i>
+					Linkedin</a>
+				<a class="button" href="https://github.com/eync"><i class="fab fa-github"></i> GitHub</a>
+				<a class="button" href="https://dev.to/eync"><i class="fab fa-dev"></i> Dev.to</a>
+				<a class="button" href="https://dribbble.com/ndugu"><i class="fab fa-dribbble"></i> Dribbble</a>
 			</div>
-		</div>		
+			<div class="item span5">
+				<div class="stereo-img2"></div>
+			</div>
+			<div class="item span12 tc" id="footer">
+			</div>
+		</div>
+	</main>
+</body>
 
-
-  </body>
 </html>
