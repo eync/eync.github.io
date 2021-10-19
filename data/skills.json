@@ -1,0 +1,81 @@
+[{
+    "skill": "Web Design",
+    "icon": "",
+    "level": 3,
+    "category": 1
+},
+{
+    "skill": "Graphic Design",
+    "icon": "",
+    "level": 2,
+    "category": 1
+},
+{
+    "skill": "User Experience",
+    "icon": "",
+    "level": 1,
+    "category": 1
+},
+{
+    "skill": "Javascript",
+    "icon": "",
+
+    "level": 2,
+
+    "category": 1
+},
+{
+    "skill": "React.js",
+    "icon": "",
+    "level": 2,
+    "category": 1
+},
+{
+    "skill": "Node.js",
+    "icon": "",
+    "level": 2,
+    "category": 2
+},
+{
+    "skill": "Express.js",
+    "icon": "",
+    "level": 2,
+    "category": 1
+},
+{
+    "skill": "MySQL",
+    "icon": "",
+    "level": 2,
+    "category": 2
+},
+{
+    "skill": "PostgreSQL",
+    "icon": "",
+    "level": 0,
+    "category": 1
+},
+{
+    "skill": "MongoDB",
+    "icon": "",
+    "level": 1,
+    "category": 1
+},
+{
+    "skill": "Linux",
+    "icon": "",
+    "level": 2,
+    "category": 1
+},
+{
+    "skill": "Nginx",
+    "icon": "",
+    "level": 2,
+    "category": 1
+},
+{
+    "skill": "Azure",
+    "icon": "",
+    "level": 2,
+    "category": 1
+}
+]
