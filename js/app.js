@@ -135,8 +135,8 @@ function APP() {
         document.getElementById("footer").innerHTML = `${COPYRIGHT} // ${VERSION}`
     }
 }
-(function CHECK_IF_LOADED() {
-    let state = document.readyState;
-    if(state === 'complete') return APP();
-    else setTimeout(CHECK_IF_LOADED, 1000);
-})();
+if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', APP);
+} else {
+    APP();
+}
